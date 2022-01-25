@@ -1,7 +1,7 @@
 package edu.ib.newtoncalc;
 
 public class StringModifier {
-    public String modifyToEquation(String string){
+    /*public String modifyToEquation(String string){
         String[] parts = string.split(",");
         String plus = "+";
         for (int i = 0; i < parts.length; i++){
@@ -21,5 +21,5 @@ public class StringModifier {
         double[] doubleValues = new double[parts.length];
         for (int i = 0; i< parts.length; i++) doubleValues[i]=Double.parseDouble(parts[i]);
         return doubleValues;
-    }
+    }*/
 }

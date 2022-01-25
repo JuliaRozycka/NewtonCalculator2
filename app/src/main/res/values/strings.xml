@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">NewtonCalc</string>
+    <string name="heading">Quadratic equation</string>
+    <string name="equation_hint">Enter the coefficients of the polynomial separated by a comma</string>
+    <string name="calculate_xValue_label">CALCULATE VALUE FOR X</string>
+    <string name="calculate_derivative_label">CALCULATE DERIVATIVE</string>
+    <string name="enter_value">Enter value:</string>
+</resources>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="30dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="@color/EgyptianBlue"
+        android:textSize="32sp"
+        android:text="@string/heading"
+        />
+
+    <EditText
+        android:id="@+id/editCoefficients"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/equation_hint"
+        android:inputType="numberDecimal"
+        android:digits="1234567890,.-"
+        android:gravity="center_vertical"
+    />
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/calculate_xValue_label"
+        android:onClick="calculateXValueClick" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/calculate_derivative_label"
+        android:onClick="calculateDerivative" />
+
+</LinearLayout>

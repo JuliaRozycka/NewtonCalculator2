@@ -1,10 +1,9 @@
 package edu.ib.newtoncalc;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
-import android.view.View;
 import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
@@ -13,11 +12,9 @@ import com.android.volley.toolbox.Volley;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
-import java.util.Arrays;
 import java.util.Map;
 
 public class DerivativeActivity extends AppCompatActivity {
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,11 +26,10 @@ public class DerivativeActivity extends AppCompatActivity {
         RequestQueue queue = Volley.newRequestQueue(this);
         Gson gson = new GsonBuilder().setPrettyPrinting().create();
         StringRequest stringRequest = new StringRequest(Request.Method.GET, url, response -> {
-            Map m = gson.fromJson(response,Map.class);
-            textView.setText("Derivative of polynomial: "+m.get("result").toString());
+            Map m = gson.fromJson(response, Map.class);
+            textView.setText("Derivative of polynomial: " + m.get("result").toString());
         }, error -> textView.setText("error"));
 
         queue.add(stringRequest);
-
     }
 }

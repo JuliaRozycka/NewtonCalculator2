@@ -17,7 +17,6 @@
         android:layout_gravity="center"
         android:textColor="@color/HanBlue"
         android:textSize="18sp"
-
         />
 
 
